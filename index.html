@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zestory</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+  <a href="#home" class="logo">Zestory</a>
+
+    <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#books">Books</a>
+    <a href="#biography">Biography</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+ 
+<div class="hero" id="home">
+  <div class="hero-note">A LITTLE CORNER<br>FOR BOOK LOVERS ♡</div>
+  
+
+  <div class="hero-content">
+    <p class="label">A LITTLE WORLD OF STORIES</p>
+    <h1>Welcome to<br>Zestory ♡</h1>
+    <p>Every book has a story to tell.</p>
+
+    <button onclick="document.getElementById('books').scrollIntoView({behavior:'smooth'})">
+      Explore Books →
+    </button>
+  </div>
+
+  <div class="hero-paper-note">
+    Read More<br>Be Happier ♡
+  </div>
+</div>
+
+<section id="books" class="books-section">
+
+  <div class="section-heading">
+    <p class="label">THE BOOK COLLECTION</p>
+    <h2>Stories Worth Discovering</h2>
+    <p>Find your next favorite story, one page at a time.</p>
+  </div>
+
+  <div class="book-grid">
+
+    <article class="book-card">
+      <div class="book-cover cover-hujan">
+        <p>TERE LIYE</p>
+        <h3>HUJAN</h3>
+        <span>A story of love and memories</span>
+      </div>
+      <span class="tag">Drama · Sci-Fi · Romance</span>
+      <h3>Hujan</h3>
+      <p>Kisah Lail tentang kehilangan, persahabatan, dan kenangan yang sulit dilepaskan.</p>
+     <button class="read-link" onclick="document.getElementById('detail-hujan').style.display='block'; document.getElementById('detail-hujan').scrollIntoView({behavior:'smooth'})">
+  Read More →
+</button>
+    </article>
+
+    <article class="book-card">
+      <div class="book-cover cover-janji">
+        <p>TERE LIYE</p>
+        <h3>JANJI</h3>
+        <span>A journey of life</span>
+      </div>
+      <span class="tag">Fiction · Life</span>
+      <h3>Janji</h3>
+      <p>Perjalanan tiga santri untuk mencari seseorang yang menyimpan kisah dan pelajaran hidup.</p>
+      <button class="read-link" onclick="document.getElementById('detail-janji').style.display='block'; document.getElementById('detail-janji').scrollIntoView({behavior:'smooth'})">
+  Read More →
+</button>
+    </article>
+
+    <article class="book-card">
+      <div class="book-cover cover-bedebah">
+        <p>TERE LIYE</p>
+        <h3>NEGERI PARA BEDEBAH</h3>
+        <span>A world of intrigue</span>
+      </div>
+      <span class="tag">Thriller · Politics</span>
+      <h3>Negeri Para Bedebah</h3>
+      <p>Thomas menghadapi krisis keuangan dan permainan kepentingan yang mengancam keluarganya.</p>
+      <button class="read-link" onclick="document.getElementById('detail-bedebah').style.display='block'; document.getElementById('detail-bedebah').scrollIntoView({behavior:'smooth'})">
+  Read More →
+</button>
+
+    </article>
+
+    <article class="book-card">
+      <div class="book-cover cover-jakarta">
+        <p>TERE LIYE</p>
+        <h3>CINTA</h3>
+        <span>Across two cities</span>
+      </div>
+      <span class="tag">Romance · Drama</span>
+      <h3>Cinta Antara Jakarta dan Kuala Lumpur</h3>
+      <p>Kisah James yang menemukan bahwa urusan hati tidak selalu bisa diselesaikan dengan logika.</p>
+      <button class="read-link" onclick="document.getElementById('detail-cinta').style.display='block'; document.getElementById('detail-cinta').scrollIntoView({behavior:'smooth'})">Read More →</button>
+
+    </article>
+
+    <article class="book-card">
+      <div class="book-cover cover-hello">
+        <p>TERE LIYE</p>
+        <h3>HELLO</h3>
+        <span>A house full of stories</span>
+      </div>
+      <span class="tag">Fiction · Romance</span>
+      <h3>Hello</h3>
+      <p>Sebuah rumah tua menyimpan kisah masa lalu tentang cinta, kenangan, dan perbedaan status sosial.</p>
+      <button class="read-link" onclick="document.getElementById('detail-hello').style.display='block'; document.getElementById('detail-hello').scrollIntoView({behavior:'smooth'})">Read More →</button>
+    </article>
+
+  </div>
+
+</section>
+
+
+
+
+
+<footer class="contact-footer">
+  <p>Thank you for being part of the Zestory story ♡</p>
+  <a href="#home">Back to the beginning ↑</a>
+</footer>
+
+
+<section id="detail-hujan" class="detail-section" style="display:none;">
+  <button class="back-button"
+    onclick="document.getElementById('detail-hujan').style.display='none'; document.getElementById('books').scrollIntoView({behavior:'smooth'})">
+    ← Back to Books
+  </button>
+
+  <div class="detail-paper">
+    <p class="label">✿ A STORY TO REMEMBER ✿</p>
+
+    <div class="detail-layout">
+      <div class="detail-cover cover-hujan">
+        <p>TERE LIYE</p>
+        <h2>HUJAN</h2>
+        <span>A story of love and memories</span>
+        <small>♡</small>
+      </div>
+
+      <div class="detail-info">
+        <span class="tag">DRAMA · SCI-FI · ROMANCE</span>
+        <h2>Hujan</h2>
+        <p class="author">by Tere Liye</p>
+
+        <p>
+          Bagaimana jika kenangan yang paling berarti
+          justru menjadi hal yang paling sulit dilepaskan?
+        </p>
+
+        <h3>About the Story ♡</h3>
+        <p>
+          Hujan menceritakan perjalanan Lail dalam menghadapi
+          kehilangan, menemukan persahabatan, dan memahami
+          perasaannya di tengah dunia masa depan.
+          Sebuah kisah tentang kenangan, harapan, dan keberanian
+          untuk melangkah ke depan.
+        </p>
+
+        <div class="detail-sticker">a little story,<br>a thousand feelings ♡</div>
+      </div>
+    </div>
+
+    <div class="review-box">
+      <p class="label">MY LITTLE BOOK DIARY</p>
+      <h3>My Review ♡</h3>
+      <p>
+        Menurutku, Hujan adalah novel yang menyentuh karena
+        mengajak pembaca memikirkan arti kehilangan dan kenangan.
+        Ceritanya juga membuat kita merenungkan bagaimana cara
+        menghadapi masa lalu tanpa berhenti menjalani kehidupan.
+      </p>
+
+      <div class="rating">★★★★★</div>
+      <p class="rating-note">A memorable read for the heart.</p>
+    </div>
+
+    <p class="detail-footer">Made with love & a little love for books ♡</p>
+  </div>
+</section>
+
+<section id="detail-janji" class="detail-section" style="display:none;">
+
+  <button class="back-button"
+    onclick="document.getElementById('detail-janji').style.display='none'; document.getElementById('books').scrollIntoView({behavior:'smooth'})">
+    ← Back to Books
+  </button>
+
+  <div class="detail-paper">
+    <p class="label">✿ A JOURNEY OF LIFE ✿</p>
+
+    <div class="detail-layout">
+      <div class="detail-cover cover-janji">
+        <p>TERE LIYE</p>
+        <h2>JANJI</h2>
+        <span>A journey of life</span>
+        <small>♡</small>
+      </div>
+
+      <div class="detail-info">
+        <span class="tag">FICTION · LIFE</span>
+        <h2>Janji</h2>
+        <p class="author">by Tere Liye</p>
+
+        <p>
+          Sebuah perjalanan yang membawa tiga santri
+          menemukan banyak hal tentang kehidupan.
+        </p>
+
+        <h3>About the Story ♡</h3>
+        <p>
+          Bahar, seorang pria dengan masa lalu yang penuh
+          cerita, menjadi sosok yang ingin mereka temukan.
+          Dalam perjalanan itu, ketiganya belajar tentang
+          pilihan, tanggung jawab, dan nilai-nilai kehidupan.
+        </p>
+
+        <div class="detail-sticker">
+          every journey teaches us something ♡
+        </div>
+      </div>
+    </div>
+
+    <div class="review-box">
+      <p class="label">MY LITTLE BOOK DIARY</p>
+      <h3>My Review ♡</h3>
+      <p>
+        Janji mengajak pembaca melihat bahwa setiap orang
+        punya perjalanan hidupnya sendiri. Ceritanya
+        menghadirkan pelajaran tentang kebaikan, penyesalan,
+        dan kesempatan untuk menjadi lebih baik.
+      </p>
+
+      <div class="rating">★★★★★</div>
+      <p class="rating-note">A story full of life lessons.</p>
+    </div>
+
+    <p class="detail-footer">
+      Made with love & a little love for books ♡
+    </p>
+  </div>
+</section>
+
+<section id="detail-bedebah" class="detail-section" style="display:none;">
+
+  <button class="back-button"
+    onclick="document.getElementById('detail-bedebah').style.display='none'; document.getElementById('books').scrollIntoView({behavior:'smooth'})">
+    ← Back to Books
+  </button>
+
+  <div class="detail-paper">
+    <p class="label">✿ A WORLD OF INTRIGUE ✿</p>
+
+    <div class="detail-layout">
+
+      <div class="detail-cover cover-bedebah">
+        <p>TERE LIYE</p>
+        <h2>NEGERI<br>PARA<br>BEDEBAH</h2>
+        <span>A game of power</span>
+        <small>♠</small>
+      </div>
+
+      <div class="detail-info">
+        <span class="tag">THRILLER · POLITICS</span>
+
+        <h2>Negeri Para Bedebah</h2>
+        <p class="author">by Tere Liye</p>
+
+        <p>
+          Ketika dunia keuangan berada di ambang krisis,
+          sebuah permainan berbahaya mulai terungkap.
+        </p>
+
+        <h3>About the Story ♡</h3>
+
+        <p>
+          Thomas, seorang konsultan keuangan, terlibat dalam
+          situasi genting ketika Bank Semesta menghadapi
+          ancaman kehancuran. Ia harus menghadapi berbagai
+          kepentingan, intrik, dan rahasia di balik krisis
+          yang mengancam keluarganya.
+        </p>
+
+        <div class="detail-sticker">
+          trust is rare,<br>truth is powerful ♡
+        </div>
+      </div>
+
+    </div>
+
+    <div class="review-box">
+      <p class="label">MY LITTLE BOOK DIARY</p>
+
+      <h3>My Review ♡</h3>
+
+      <p>
+        Novel ini menawarkan cerita yang penuh ketegangan
+        dan strategi. Konflik keuangan serta permainan
+        kepentingan membuat pembaca penasaran dengan
+        keputusan yang akan diambil Thomas.
+      </p>
+
+      <div class="rating">★★★★★</div>
+      <p class="rating-note">A thrilling page-turner.</p>
+    </div>
+
+    <p class="detail-footer">
+      Made with love & a little love for books ♡
+    </p>
+
+  </div>
+</section>
+
+<section id="detail-cinta" class="detail-section" style="display:none;">
+
+  <button class="back-button"
+    onclick="document.getElementById('detail-cinta').style.display='none'; document.getElementById('books').scrollIntoView({behavior:'smooth'})">
+    ← Back to Books
+  </button>
+
+  <div class="detail-paper">
+    <p class="label">✿ A STORY BETWEEN TWO CITIES ✿</p>
+
+    <div class="detail-layout">
+
+      <div class="detail-cover cover-cinta">
+        <p>TERE LIYE</p>
+        <h2>CINTA<br>ANTARA<br>DUA KOTA</h2>
+        <span>Jakarta × Kuala Lumpur</span>
+        <small>♡</small>
+      </div>
+
+      <div class="detail-info">
+        <span class="tag">ROMANCE · DRAMA</span>
+
+        <h2>Cinta Antara Jakarta dan Kuala Lumpur</h2>
+        <p class="author">by Tere Liye</p>
+
+        <p>
+          Dua kota, perjalanan yang berbeda, dan sebuah kisah
+          yang mengajak pembaca menyelami hubungan antarmanusia.
+        </p>
+
+        <h3>About the Story ♡</h3>
+
+        <p>
+          Jakarta dan Kuala Lumpur menjadi latar dalam judul
+          yang membawa kesan tentang jarak dan hubungan.
+          Sebelum menambahkan sinopsis yang lebih spesifik,
+          pastikan detail cerita sesuai dengan edisi buku
+          yang kamu miliki.
+        </p>
+
+        <div class="detail-sticker">
+          two cities,<br>one story ♡
+        </div>
+      </div>
+
+    </div>
+
+    <div class="review-box">
+      <p class="label">MY LITTLE BOOK DIARY</p>
+
+      <h3>My Review ♡</h3>
+
+      <p>
+        Bagiku, judul ini memberi kesan tentang perjalanan,
+        jarak, dan hubungan yang menarik untuk dijelajahi.
+        Aku ingin memahami bagaimana cerita dan para tokohnya
+        mengembangkan tema tersebut.
+      </p>
+
+      <div class="rating">★★★★★</div>
+      <p class="rating-note">A story waiting to be explored.</p>
+    </div>
+
+    <p class="detail-footer">
+      Made with love & a little love for books ♡
+    </p>
+
+  </div>
+</section>
+
+<section id="detail-hello" class="detail-section" style="display:none;">
+
+  <button class="back-button"
+    onclick="document.getElementById('detail-hello').style.display='none'; document.getElementById('books').scrollIntoView({behavior:'smooth'})">
+    ← Back to Books
+  </button>
+
+  <div class="detail-paper">
+    <p class="label">✿ A LETTER FROM THE HEART ✿</p>
+
+    <div class="detail-layout">
+
+      <div class="detail-cover cover-hello">
+        <p>TERE LIYE</p>
+        <h2>HELLO</h2>
+        <span>A story of memories</span>
+        <small>♡ ✉ ♡</small>
+      </div>
+
+      <div class="detail-info">
+        <span class="tag">FICTION · MYSTERY</span>
+
+        <h2>Hello</h2>
+        <p class="author">by Tere Liye</p>
+
+        <p>
+          Sebuah judul yang sederhana, tetapi mengundang rasa
+          penasaran tentang cerita dan kenangan di baliknya.
+        </p>
+
+        <h3>About the Story ♡</h3>
+
+        <p>
+          Novel Hello karya Tere Liye mengajak pembaca
+          mengikuti kisah yang terhubung dengan masa lalu,
+          kenangan, dan perjalanan kehidupan. Rahasia yang
+          tersimpan perlahan membawa pembaca memahami
+          hubungan antara peristiwa dan para tokohnya.
+        </p>
+
+        <div class="detail-sticker">
+          some stories<br>stay with us ♡
+        </div>
+      </div>
+
+    </div>
+
+    <div class="review-box">
+      <p class="label">MY LITTLE BOOK DIARY</p>
+
+      <h3>My Review ♡</h3>
+
+      <p>
+        Bagiku, Hello menarik untuk dijelajahi karena judulnya
+        terasa sederhana, tetapi menyimpan rasa penasaran.
+        Kisah tentang kenangan dan perjalanan hidup bisa
+        membuat pembaca merenungkan arti dari setiap pertemuan.
+      </p>
+
+      <div class="rating">★★★★★</div>
+      <p class="rating-note">Some stories never really leave us.</p>
+    </div>
+
+    <p class="detail-footer">
+      Made with love & a little love for books ♡
+    </p>
+
+  </div>
+</section>
+
+
+<section id="biography" class="biography-section">
+
+  <div class="bio-hero">
+    <div class="bio-heading">
+      <span class="bio-eyebrow">✿ THE MIND BEHIND THE PAGES ✿</span>
+      <h1>Meet the<br><em>Storyteller.</em></h1>
+      <p>
+        Every book begins with an idea.
+        Every idea opens a new world.
+      </p>
+      <span class="bio-handwriting">A little story about the author ♡</span>
+    </div>
+
+    <div class="bio-portrait-card">
+      <div class="bio-photo-frame">
+        <img
+          src="https://placehold.co/500x620/f4dce3/9d526b?text=Author+Portrait"
+          alt="Foto penulis Tere Liye">
+      </div>
+      <span class="bio-photo-note">the author corner ✿</span>
+      <span class="bio-sticker">BOOKS<br>& DREAMS ♡</span>
+    </div>
+  </div>
+
+  <div class="bio-introduction">
+    <span class="bio-eyebrow">01 — THE AUTHOR</span>
+    <h2>Tere Liye <span>♡</span></h2>
+    <p class="bio-subtitle">An Indonesian novelist</p>
+
+    <p>
+      Tere Liye adalah nama pena Darwis, seorang penulis
+      Indonesia yang dikenal melalui berbagai novel dengan
+      tema keluarga, kehidupan, persahabatan, dan petualangan.
+      Karya-karyanya mengajak pembaca melihat beragam sisi
+      kehidupan melalui cerita dan karakter yang berbeda.
+    </p>
+
+    <p>
+      Salah satu karya yang dikenal luas adalah
+      <em>Hafalan Shalat Delisa</em>. Seiring perjalanan
+      kepenulisannya, ia juga menghadirkan berbagai cerita
+      dengan genre dan latar yang beragam.
+    </p>
+
+    <div class="bio-quote">
+      <span>“</span>
+      <p>
+        Behind every page, there is a world waiting to be discovered.
+      </p>
+      <small>— A little note from Zestory</small>
+    </div>
+  </div>
+
+  <div class="bio-facts-section">
+    <span class="bio-eyebrow">02 — THE LITTLE DETAILS</span>
+    <h2>A Few Things <em>to Know</em></h2>
+
+    <div class="bio-facts">
+      <div class="bio-fact-card">
+        <span>✿</span>
+        <small>PEN NAME</small>
+        <h3>Tere Liye</h3>
+      </div>
+
+      <div class="bio-fact-card">
+        <span>♡</span>
+        <small>REAL NAME</small>
+        <h3>Darwis</h3>
+      </div>
+
+      <div class="bio-fact-card">
+        <span>✉</span>
+        <small>KNOWN FOR</small>
+        <h3>Novels</h3>
+      </div>
+
+      <div class="bio-fact-card">
+        <span>✧</span>
+        <small>HOMETOWN</small>
+        <h3>Lahat, South Sumatra</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="bio-works-section">
+    <span class="bio-eyebrow">03 — BETWEEN THE COVERS</span>
+    <h2>Stories You May <em>Know</em></h2>
+    <p class="bio-works-subtitle">
+      A small shelf of stories by Tere Liye.
+    </p>
+
+    <div class="bio-works-grid">
+      <div class="bio-work-card">
+        <div class="bio-work-cover work-hujan">
+          <span>TERE LIYE</span>
+          <h3>HUJAN</h3>
+          <small>♡</small>
+        </div>
+        <h3>Hujan</h3>
+        <p>Memories, friendship & the future.</p>
+      </div>
+
+      <div class="bio-work-card">
+        <div class="bio-work-cover work-bumi">
+          <span>TERE LIYE</span>
+          <h3>BUMI</h3>
+          <small>✦</small>
+        </div>
+        <h3>Bumi</h3>
+        <p>Adventure beyond the ordinary world.</p>
+      </div>
+
+      <div class="bio-work-card">
+        <div class="bio-work-cover work-pulang">
+          <span>TERE LIYE</span>
+          <h3>PULANG</h3>
+          <small>✧</small>
+        </div>
+        <h3>Pulang</h3>
+        <p>Family, loyalty & a journey home.</p>
+      </div>
+
+      <div class="bio-work-card">
+        <div class="bio-work-cover work-delisa">
+          <span>TERE LIYE</span>
+          <h3>HAFALAN<br>SHALAT DELISA</h3>
+          <small>♡</small>
+        </div>
+        <h3>Hafalan Shalat Delisa</h3>
+        <p>Faith, family & resilience.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bio-ending">
+    <span>✿ ♡ ✿</span>
+    <h2>Every story leaves<br><em>a little something behind.</em></h2>
+    <p>Thank you for visiting the author corner of Zestory.</p>
+  </div>
+
+</section>
+<section id="about" class="about-section">
+  <p class="label">A LITTLE NOTE ♡</p>
+  <h2>What is Zestory? </h2>
+  <p>
+    Zestory is a cozy little corner for book lovers.
+    Discover new stories, explore different worlds,
+    and find books that speak to your heart.
+  </p>
+  <div class="about-note">
+    Every story has its own magic. ♡
+  </div>
+</section>
+
+
+<section id="contact" class="contact-section">
+
+  <div class="contact-heading">
+    <span class="contact-eyebrow">A LITTLE POSTCARD FROM ZESTORY</span>
+    <h2>Let's keep<br><em>in touch.</em></h2>
+    <p>
+      Every story begins somewhere.
+      Maybe yours begins with a little message.
+    </p>
+
+    <div class="contact-note">
+      <span class="contact-note-icon">♡</span>
+      <div>
+        <strong>Dear, reader...</strong>
+        <p>
+          Have a book recommendation, a thought to share,
+          or simply want to say hello? This little corner
+          is always open for book lovers.
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-signature">
+      with love & a little strawberry milk ♡
+    </div>
+  </div>
+
+  <div class="postcard-wrap">
+    <div class="postcard">
+      <div class="postcard-top">
+        <span>✿ THE POSTCARD ✿</span>
+        <span class="postcard-stamp">Z<br>♡</span>
+      </div>
+
+      <h3>Send a little note</h3>
+      <p class="postcard-subtitle">
+        I'd love to hear from you.
+      </p>
+
+      <form class="contact-form"
+        action="mailto:"
+        method="post"
+        enctype="text/plain">
+
+        <label for="contact-name">Your name</label>
+        <input
+          type="text"
+          id="contact-name"
+          name="Name"
+          placeholder="What should I call you?"
+          required>
+
+        <label for="contact-email">Your email</label>
+        <input
+          type="email"
+          id="contact-email"
+          name="Email"
+          placeholder="yourname@example.com"
+          required>
+
+        <label for="contact-topic">A little note about...</label>
+        <select id="contact-topic" name="Topic" required>
+          <option value="" disabled selected>Choose a topic ♡</option>
+          <option>Book recommendations</option>
+          <option>My favorite stories</option>
+          <option>Website feedback</option>
+          <option>Just saying hello</option>
+        </select>
+
+        <label for="contact-message">Your message</label>
+        <textarea
+          id="contact-message"
+          name="Message"
+          rows="4"
+          placeholder="Write your little note here..."
+          required></textarea>
+
+        <button type="submit" class="contact-send">
+          Send a little note ♡ →
+        </button>
+      </form>
+
+      <div class="postcard-footer">
+        <span>sealed with love</span>
+        <span>♡ ✉ ♡</span>
+      </div>
+    </div>
+    <span class="postcard-decoration">a note for you ✿</span>
+  </div>
+
+</section>
+
+</body>
+</html>

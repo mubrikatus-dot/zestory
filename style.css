@@ -1,0 +1,1752 @@
+
+
+/* ===== ZESTORY: STRAWBERRY MILK SCRAPBOOK ===== */
+
+
+/* ===== ZESTORY: ELEGANT PINK EDITORIAL ===== */
+
+:root {
+  --cream: #F9F5F1;
+  --pink-light: #F3E4E3;
+  --pink: #D9A6AA;
+  --pink-dark: #B77B85;
+  --berry: #754B52;
+  --brown: #49363B;
+  --white: #FFFCFA;
+  --yellow: #F3E8D6;
+  --lavender: #EAE4EA;
+  --mint: #E5EBE5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--cream);
+  color: var(--brown);
+  line-height: 1.8;
+}
+
+/* Semua judul */
+
+h1, h2, h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  color: var(--berry);
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Area pembuka */
+
+
+/* ZESTORY — SCRAPBOOK HERO */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 510px;
+  padding: 90px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 20% 20%, #ffe5ec 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, #f8cbd7 0%, transparent 50%),
+    #fff0f2;
+  border-top: 3px dashed #f2b8c7;
+  border-bottom: 3px dashed #f2b8c7;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  color: #c94f70;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.15;
+  margin: 18px 0;
+}
+
+.hero-content > p:not(.label) {
+  color: #79515d;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.hero-note,
+.hero-paper-note {
+  position: absolute;
+  z-index: 1;
+  padding: 16px 20px;
+  color: #805562;
+  background: #fff7e9;
+  box-shadow: 2px 5px 12px #b66c7b20;
+  font-size: 0.8rem;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+.hero-note {
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  background: #f8d0dc;
+}
+
+.hero-paper-note {
+  top: 65px;
+  right: 7%;
+  transform: rotate(5deg);
+  text-align: center;
+}
+
+  .hero button {
+    border: none;
+    border-radius: 30px;
+    padding: 14px 28px;
+    background: #d65e7c;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    transition: transform 0.25s, background 0.25s;
+  }
+  
+  .hero button:hover {
+    background: #bd4968;
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 600px) {
+    .hero {
+      min-height: 460px;
+      padding: 120px 20px 100px;
+    }
+  
+    .hero-note {
+      top: 20px;
+    }
+  
+    .hero-paper-note {
+      top: auto;
+      bottom: 18px;
+      right: 8%;
+      font-size: 0.65rem;
+      padding: 8px 12px;
+    }
+  
+    .sticker-berry {
+      top: 25%;
+    left: 3%;
+  }
+
+  .sticker-books {
+    top: 27%;
+    right: 3%;
+  }
+
+  .sticker-flower {
+    bottom: 8%;
+    left: 4%;
+  }
+
+  .sticker-bow {
+    bottom: 8%;
+    right: 4%;
+  }
+}
+
+
+/* Hiasan scrapbook */
+
+.hero::before {
+  content: "♡  ✿  ♡";
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  padding: 5px 14px;
+  background: var(--yellow);
+  color: var(--berry);
+  border: 2px dashed #e8c76f;
+  border-radius: 8px;
+  transform: rotate(5deg);
+  font-size: 1.1rem;
+}
+
+.hero::after {
+  content: "made with love ♡";
+  position: absolute;
+  bottom: 17px;
+  left: 20px;
+  padding: 5px 12px;
+  background: var(--mint);
+  border-radius: 8px;
+  transform: rotate(-4deg);
+  font-size: 0.75rem;
+}
+
+/* Label kecil */
+
+.label {
+  display: inline-block;
+  padding: 7px 15px;
+  background: var(--white);
+  color: var(--berry);
+  border: 1px dashed var(--pink-dark);
+  border-radius: 30px;
+  font-size: 0.72rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Judul utama */
+
+.hero h1 {
+  margin: 20px 0;
+  text-shadow: 3px 3px 0 white;
+}
+
+.hero p:not(.label) {
+  max-width: 550px;
+  margin: 15px auto;
+}
+
+/* Tombol */
+
+button {
+  display: inline-block;
+  padding: 13px 25px;
+  margin: 8px 5px;
+  background: var(--pink-dark);
+  color: white;
+  border: 2px solid var(--white);
+  border-radius: 30px;
+  box-shadow: 0 4px 0 var(--berry);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+  background: var(--berry);
+  transform: translateY(-3px) rotate(-1deg);
+}
+
+/* Link */
+
+a {
+  color: var(--berry);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--pink-dark);
+}
+
+/* Bagian website */
+
+section {
+  padding: 55px 24px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* Kartu ala scrapbook */
+
+.card {
+  position: relative;
+  padding: 24px;
+  margin: 12px;
+  background: var(--white);
+  border: 2px solid #f8d3de;
+  border-radius: 8px 18px 9px 16px;
+  box-shadow: 5px 6px 0 #e778982b;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px) rotate(-1deg);
+  box-shadow: 7px 9px 0 #e7789844;
+}
+
+.card:nth-child(2n) {
+  background: #fff0f3;
+  transform: rotate(1deg);
+}
+
+.card:nth-child(3n) {
+  background: #fff8df;
+}
+
+.card h3 {
+  margin-top: 8px;
+}
+
+/* Sampul buku dekoratif */
+
+.book-cover {
+  display: flex;
+  min-height: 220px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(145deg, #f5a6ba, #a84460);
+  color: white;
+  border: 5px solid white;
+  outline: 1px dashed var(--pink-dark);
+  border-radius: 5px;
+  box-shadow: 4px 5px 0 #684b5222;
+}
+
+.book-cover h3 {
+  color: white;
+}
+
+.book-cover.yellow {
+  background: linear-gradient(145deg, #fff0b8, #e8ad73);
+}
+
+.book-cover.lavender {
+  background: linear-gradient(145deg, #eee5ff, #b9a1df);
+}
+
+.book-cover.mint {
+  background: linear-gradient(145deg, #e0f2e3, #86b99a);
+}
+
+/* Kategori dan label buku */
+
+.tag {
+  display: inline-block;
+  padding: 4px 11px;
+  margin: 3px;
+  background: var(--pink-light);
+  color: var(--berry);
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: bold;
+}
+
+/* Form kontak */
+
+input, textarea, select {
+  width: 100%;
+  padding: 13px 15px;
+  margin: 7px 0 15px;
+  background: white;
+  color: var(--brown);
+  border: 2px solid var(--pink-light);
+  border-radius: 12px;
+  font: inherit;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid var(--pink);
+}
+
+/* Footer */
+
+footer {
+  margin-top: 40px;
+  padding: 35px 20px;
+  text-align: center;
+  background: var(--pink-light);
+  border-top: 3px dashed var(--pink);
+  color: var(--berry);
+}
+
+/* Tampilan HP */
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 75px 18px;
+    margin: 16px auto;
+  }
+
+  .hero::before {
+    font-size: 0.85rem;
+    right: 10px;
+  }
+
+  section {
+    padding: 35px 16px;
+  }
+
+  .card {
+    margin: 10px 0;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
+
+/* ===== NAVBAR ZESTORY ===== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 5%;
+  background: #fffafa;
+  border-bottom: 2px dashed #f5a6ba;
+  position: relative;
+}
+
+.logo {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #a84460;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #f5a6ba;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: #a84460;
+  text-decoration: none;
+  padding: 9px 15px;
+  border-radius: 25px;
+  font-weight: 800;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  background: #ffdce5;
+  transform: translateY(-2px);
+}
+
+/* Navbar di layar HP */
+
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+}
+
+/* ===== BOOK SCRAPBOOK ===== */
+
+.books-section {
+  padding: 70px 5%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading > p:not(.label) {
+  max-width: 550px;
+  margin: 15px auto;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.book-card {
+  padding: 20px;
+  background: white;
+  border: 2px solid #f8d3de;
+  border-radius: 14px 22px 12px 20px;
+  box-shadow: 5px 6px 0 #e7789833;
+  transition: transform 0.25s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-7px) rotate(-1deg);
+}
+
+.pink-card {
+  background: #fff0f3;
+}
+
+.yellow-card {
+  background: #fff9e7;
+}
+
+.lavender-card {
+  background: #f3edff;
+}
+
+.mint-card {
+  background: #eff9f0;
+}
+
+/* Sampul buku buatan sendiri */
+
+.book-cover {
+  min-height: 245px;
+  padding: 24px 16px;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border: 5px solid white;
+  outline: 1px dashed #e77898;
+  border-radius: 5px;
+  box-shadow: 4px 5px 0 #684b5222;
+}
+
+.book-cover p {
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.book-cover h3 {
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.8rem;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+
+.book-cover span {
+  font-size: 0.8rem;
+}
+
+.cover-decoration {
+  font-size: 1.7rem !important;
+  margin-bottom: 5px;
+}
+
+.cover-hujan {
+  background: linear-gradient(145deg, #ef9bb5, #a84460);
+}
+
+.cover-janji {
+  background: linear-gradient(145deg, #eacb78, #b67d45);
+}
+
+.cover-bedebah {
+  background: linear-gradient(145deg, #a999d9, #63518f);
+}
+
+.cover-jakarta {
+  background: linear-gradient(145deg, #8dc9a1, #397657);
+}
+
+.cover-hello {
+  background: linear-gradient(145deg, #f5b7cb, #d86d91);
+}
+
+.book-card > h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.35rem;
+  margin: 14px 0 8px;
+}
+
+.book-card > p {
+  font-size: 0.94rem;
+}
+
+.read-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding-bottom: 3px;
+  border-bottom: 2px dashed #e77898;
+  font-size: 0.9rem;
+}
+
+/* Responsif untuk tablet dan HP */
+
+@media (max-width: 850px) {
+  .book-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 550px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .books-section {
+    padding: 45px 20px;
+  }
+}
+
+
+.about-section {
+  padding: 70px 10%;
+  text-align: center;
+  background: #fff0f4;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  color: #a84460;
+  margin: 12px 0;
+}
+
+.about-section > p:not(.label) {
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.9;
+  color: #684b52;
+}
+
+.about-note {
+  max-width: 450px;
+  margin: 30px auto 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 2px dashed #f5a6ba;
+  border-radius: 20px;
+  transform: rotate(-1deg);
+}
+
+.about-note span {
+  font-size: 2rem;
+}
+
+.about-note p {
+  color: #684b52;
+  line-height: 1.7;
+}
+
+
+/* ===== ELEGANT FINISH ===== */
+
+.navbar {
+  background: var(--cream);
+  border-bottom: 1px solid #E6D5D3;
+}
+
+.logo {
+  color: var(--berry);
+}
+
+.nav-links a {
+  color: var(--brown);
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  background: var(--pink-light);
+  transform: none;
+}
+
+.hero {
+  background:
+    linear-gradient(135deg, #F7EAE7, #F1DFDF 55%, #EAD4D4);
+  border-top: 0;
+  border-bottom: 1px solid #E3CACA;
+}
+
+.hero h1,
+.hero-content h1 {
+  color: var(--berry);
+  text-shadow: none;
+}
+
+.hero button,
+button {
+  background: var(--berry);
+  border: 1px solid var(--berry);
+  border-radius: 5px;
+  box-shadow: none;
+  color: var(--white);
+}
+
+.hero button:hover,
+button:hover {
+  background: var(--pink-dark);
+  transform: translateY(-2px);
+}
+
+.label {
+  background: transparent;
+  color: var(--pink-dark);
+  border: 0;
+  border-radius: 0;
+  letter-spacing: 2.5px;
+}
+
+.book-card,
+.card {
+  background: var(--white);
+  border: 1px solid #E8DAD6;
+  border-radius: 5px;
+  box-shadow: 0 5px 18px #49363B0A;
+  transform: none;
+}
+
+.book-card:hover,
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px #49363B12;
+}
+
+.pink-card,
+.yellow-card,
+.lavender-card,
+.mint-card,
+.card:nth-child(2n),
+.card:nth-child(3n) {
+  background: var(--white);
+}
+
+.book-cover {
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.cover-hujan {
+  background: linear-gradient(145deg, #D9A6AA, #8D5965);
+}
+
+.cover-janji {
+  background: linear-gradient(145deg, #D8C4A0, #927957);
+}
+
+.cover-bedebah {
+  background: linear-gradient(145deg, #B7A9BE, #716177);
+}
+
+.cover-jakarta {
+  background: linear-gradient(145deg, #A9B9A8, #617B68);
+}
+
+.cover-hello {
+  background: linear-gradient(145deg, #E8C5C8, #B77B85);
+}
+
+.tag {
+  background: var(--pink-light);
+  color: var(--berry);
+  border-radius: 3px;
+}
+
+.read-link {
+  border-bottom: 1px solid var(--pink-dark);
+}
+
+.about-section {
+  background: #F3E8E5;
+}
+
+.about-note {
+  background: var(--white);
+  border: 1px solid #E3CACA;
+  border-radius: 5px;
+  transform: none;
+}
+
+footer {
+  background: #EBD9D8;
+  border-top: 1px solid #D8BFC0;
+  color: var(--berry);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    margin: 0;
+  }
+
+  .book-card:hover,
+  .card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+
+/* ===== ZESTORY: HUJAN BOOK DETAIL ===== */
+
+.detail-section {
+  padding: 55px 7%;
+  background: #fff6f6;
+  font-family: 'Nunito', sans-serif;
+  color: #704653;
+}
+
+.detail-paper {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 40px;
+  background: #fffdf9;
+  border: 2px solid #f5d6de;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(168, 68, 96, 0.10);
+  position: relative;
+  overflow: hidden;
+}
+
+.detail-paper::before {
+  content: "♡";
+  position: absolute;
+  top: 12px;
+  right: 22px;
+  font-size: 38px;
+  color: #f5a6ba;
+  transform: rotate(15deg);
+}
+
+.detail-paper .label {
+  color: #c56e88;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: minmax(200px, 0.8fr) 1.2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.detail-cover {
+  min-height: 350px;
+  padding: 28px 20px;
+  border: 7px solid #fff;
+  outline: 1px solid #f0cad5;
+  box-shadow: 5px 8px 18px rgba(112, 70, 83, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: rotate(-2deg);
+  box-sizing: border-box;
+}
+
+.detail-cover p {
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.detail-cover h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 46px;
+  margin: 18px 0;
+}
+
+.detail-cover span {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.detail-cover small {
+  font-size: 32px;
+  margin-top: 28px;
+}
+
+/* Pink scrapbook cover */
+.detail-cover.cover-hujan {
+  background: linear-gradient(145deg, #f9dfe7, #eaa2b8);
+  color: #783e54;
+}
+
+.detail-info .tag {
+  display: inline-block;
+  background: #fde8ed;
+  color: #a84460;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.detail-info h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 42px;
+  color: #a84460;
+  margin: 18px 0 0;
+}
+
+.detail-info .author {
+  color: #c17a8d;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.detail-info p {
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+.detail-info h3,
+.review-box h3 {
+  font-family: 'Fredoka', sans-serif;
+  color: #a84460;
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+.detail-sticker {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 13px 18px;
+  background: #fff0d9;
+  border: 1px dashed #d9a16f;
+  border-radius: 5px;
+  color: #9b694d;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 13px;
+  transform: rotate(-3deg);
+}
+
+.review-box {
+  margin-top: 50px;
+  padding: 28px;
+  background: #fff0f3;
+  border: 1px dashed #e7a2b5;
+  border-radius: 18px;
+}
+
+.review-box .label {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.review-box h3 {
+  margin-top: 0;
+}
+
+.review-box > p:not(.label):not(.rating-note) {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.rating {
+  color: #d89b50;
+  font-size: 25px;
+  letter-spacing: 4px;
+  margin-top: 20px;
+}
+
+.rating-note {
+  color: #b77b8e;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.back-button {
+  border: 1px solid #edb5c5;
+  background: #fffdf9;
+  color: #a84460;
+  padding: 11px 18px;
+  border-radius: 25px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.back-button:hover {
+  background: #f5a6ba;
+  color: white;
+}
+
+.detail-footer {
+  margin: 30px 0 0;
+  text-align: center;
+  color: #c17a8d;
+  font-size: 12px;
+  font-style: italic;
+}
+
+@media (max-width: 650px) {
+  .detail-section {
+    padding: 30px 5%;
+  }
+
+  .detail-paper {
+    padding: 25px 18px;
+  }
+
+  .detail-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .detail-cover {
+    width: 85%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .detail-info h2 {
+    font-size: 34px;
+  }
+
+  .review-box {
+    padding: 20px;
+    margin-top: 35px;
+  }
+}
+
+
+/* ===== JANJI BOOK DETAIL ===== */
+
+.detail-cover.cover-janji {
+  background: linear-gradient(145deg, #fce8d5, #e8b78e);
+  color: #704b35;
+}
+
+/* Samakan gaya tombol Read More */
+button.read-link {
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
+/* Pastikan tombol detail terlihat rapi */
+.detail-section .back-button {
+  margin-bottom: 5px;
+}
+
+/* Tampilan HP */
+@media (max-width: 650px) {
+  .detail-cover.cover-janji h2 {
+    font-size: 42px;
+  }
+}
+
+
+/* ===== NEGERI PARA BEDEBAH ===== */
+
+.detail-cover.cover-bedebah {
+  background: linear-gradient(145deg, #e5d8d3, #8b6b70);
+  color: #fffaf7;
+}
+
+.detail-cover.cover-bedebah h2 {
+  font-size: 31px;
+  line-height: 1.15;
+}
+
+
+/* ===== ZESTORY BIOGRAPHY ===== */
+
+.biography-section {
+  --bio-pink: #f5a6ba;
+  --bio-berry: #a84460;
+  --bio-cream: #fff6f6;
+  --bio-text: #765761;
+
+  background:
+    radial-gradient(ellipse at 8% 5%, #fbe1e8 0, transparent 30%),
+    var(--bio-cream);
+  color: var(--bio-text);
+  padding: 65px 7%;
+  scroll-margin-top: 100px;
+  overflow: hidden;
+}
+
+.bio-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 45px;
+  max-width: 1100px;
+  margin: 0 auto 90px;
+}
+
+.bio-eyebrow {
+  display: inline-block;
+  color: var(--bio-berry);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.bio-heading h1 {
+  color: var(--bio-berry);
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+  margin: 22px 0;
+}
+
+.bio-heading h1 em,
+.bio-facts-section h2 em,
+.bio-works-section h2 em,
+.bio-ending h2 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.bio-heading > p {
+  max-width: 360px;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.bio-handwriting {
+  display: inline-block;
+  margin-top: 18px;
+  color: #c36e8a;
+  font-family: Georgia, serif;
+  font-style: italic;
+  transform: rotate(-4deg);
+}
+
+.bio-portrait-card {
+  position: relative;
+  max-width: 370px;
+  width: 100%;
+  margin: auto;
+  padding: 15px 15px 35px;
+  background: #fff;
+  border: 1px solid #f0d1da;
+  border-radius: 5px;
+  box-shadow: 0 18px 45px #a8446018;
+  transform: rotate(2deg);
+}
+
+.bio-photo-frame {
+  overflow: hidden;
+  background: #f7dfe6;
+  aspect-ratio: 4 / 5;
+  border-radius: 3px;
+}
+
+.bio-photo-frame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.bio-photo-note {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: #a84460;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+.bio-sticker {
+  position: absolute;
+  right: -23px;
+  bottom: 95px;
+  padding: 17px 13px;
+  background: #f5a6ba;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.6;
+  font-weight: 800;
+  transform: rotate(10deg);
+  box-shadow: 0 5px 15px #a8446020;
+}
+
+.bio-introduction,
+.bio-facts-section,
+.bio-works-section {
+  max-width: 1000px;
+  margin: 0 auto 85px;
+}
+
+.bio-introduction h2,
+.bio-facts-section h2,
+.bio-works-section h2 {
+  color: var(--bio-berry);
+  font-size: clamp(30px, 4vw, 44px);
+  margin: 14px 0 8px;
+}
+
+.bio-introduction h2 span {
+  color: var(--bio-pink);
+}
+
+.bio-subtitle {
+  color: #c16e89;
+  font-family: Georgia, serif;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.bio-introduction > p:not(.bio-subtitle) {
+  max-width: 780px;
+  font-size: 15px;
+  line-height: 1.95;
+  margin-bottom: 15px;
+}
+
+.bio-quote {
+  margin-top: 32px;
+  padding: 25px 30px;
+  border-left: 4px solid var(--bio-pink);
+  border-radius: 0 14px 14px 0;
+  background: #fff;
+  box-shadow: 0 8px 30px #a8446009;
+}
+
+.bio-quote > span {
+  color: var(--bio-pink);
+  font-family: Georgia, serif;
+  font-size: 45px;
+  line-height: 0.8;
+}
+
+.bio-quote p {
+  color: var(--bio-berry);
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.bio-quote small {
+  color: #ad7c89;
+}
+
+.bio-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.bio-fact-card {
+  padding: 23px 15px;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #f1d4dd;
+  border-radius: 17px;
+  box-shadow: 0 8px 25px #a8446008;
+  transition: transform 0.2s ease;
+}
+
+.bio-fact-card:hover {
+  transform: translateY(-5px);
+}
+
+.bio-fact-card > span {
+  display: block;
+  color: #d77d99;
+  font-size: 25px;
+  margin-bottom: 17px;
+}
+
+.bio-fact-card small {
+  color: #bc8192;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+}
+
+.bio-fact-card h3 {
+  color: var(--bio-berry);
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.bio-works-subtitle {
+  margin-top: 12px;
+  line-height: 1.8;
+}
+
+.bio-works-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.bio-work-card {
+  min-width: 0;
+}
+
+.bio-work-cover {
+  min-height: 235px;
+  padding: 18px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 5px solid #fff;
+  outline: 1px solid #f0d1da;
+  box-shadow: 0 9px 25px #a8446010;
+  transition: transform 0.25s ease;
+}
+
+.bio-work-card:hover .bio-work-cover {
+  transform: translateY(-6px) rotate(-1deg);
+}
+
+.bio-work-cover span {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.bio-work-cover h3 {
+  font-family: Georgia, serif;
+  font-size: clamp(19px, 2.5vw, 28px);
+  overflow-wrap: anywhere;
+}
+
+.bio-work-cover small {
+  font-size: 23px;
+}
+
+.work-hujan {
+  background: linear-gradient(155deg, #d8e8ed, #8baebd);
+  color: #fff;
+}
+
+.work-bumi {
+  background: linear-gradient(155deg, #b7d7c2, #527b69);
+  color: #fff;
+}
+
+.work-pulang {
+  background: linear-gradient(155deg, #edc8a8, #a9634b);
+  color: #fffaf4;
+}
+
+.work-delisa {
+  background: linear-gradient(155deg, #f7e4c5, #d6a36d);
+  color: #775239;
+}
+
+.bio-work-card > h3 {
+  margin-top: 17px;
+  color: var(--bio-berry);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.bio-work-card > p {
+  color: #94747d;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.bio-ending {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 45px 20px;
+  text-align: center;
+  background: #fbe8ee;
+  border: 1px dashed #e7b2c2;
+  border-radius: 20px;
+}
+
+.bio-ending > span {
+  color: #c87992;
+  letter-spacing: 7px;
+}
+
+.bio-ending h2 {
+  color: var(--bio-berry);
+  font-family: Georgia, serif;
+  font-size: clamp(26px, 4vw, 40px);
+  line-height: 1.45;
+  margin: 20px 0 12px;
+}
+
+.bio-ending p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 760px) {
+  .biography-section {
+    padding: 45px 6%;
+  }
+
+  .bio-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 65px;
+  }
+
+  .bio-heading {
+    text-align: center;
+  }
+
+  .bio-heading > p {
+    margin: auto;
+  }
+
+  .bio-portrait-card {
+    max-width: 300px;
+  }
+
+  .bio-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bio-works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 16px;
+  }
+
+  .bio-work-cover {
+    min-height: 220px;
+  }
+
+  .bio-introduction,
+  .bio-facts-section,
+  .bio-works-section {
+    margin-bottom: 65px;
+  }
+}
+
+/* ===== ZESTORY: STRAWBERRY MILK POSTCARD ===== */
+
+.contact-section {
+  --contact-berry: #a84460;
+  --contact-pink: #e9a5b8;
+  --contact-cream: #fff8f5;
+
+  max-width: none;
+  padding: 85px 7%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 5% 10%, #f9e2e8, transparent 35%),
+    linear-gradient(135deg, #fff9f5, #f7e9e7);
+  scroll-margin-top: 30px;
+}
+
+.contact-heading {
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.contact-eyebrow {
+  color: var(--contact-berry);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.contact-heading h2 {
+  color: var(--contact-berry);
+  font-size: clamp(43px, 6vw, 72px);
+  line-height: 1.05;
+  margin: 22px 0;
+  letter-spacing: -2px;
+}
+
+.contact-heading h2 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: #c16e89;
+}
+
+.contact-heading > p {
+  max-width: 390px;
+  line-height: 1.9;
+  color: #795b63;
+}
+
+.contact-note {
+  display: flex;
+  gap: 17px;
+  align-items: flex-start;
+  margin-top: 35px;
+  padding: 22px;
+  background: #fffdf9;
+  border: 1px solid #ecd1d6;
+  border-left: 4px solid #d99aab;
+  box-shadow: 0 8px 25px #754b520c;
+}
+
+.contact-note-icon {
+  font-size: 27px;
+  color: #c16e89;
+}
+
+.contact-note strong {
+  color: #a84460;
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+.contact-note p {
+  margin-bottom: 0;
+  color: #795b63;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.contact-signature {
+  margin-top: 28px;
+  color: #a84460;
+  font-family: Georgia, serif;
+  font-style: italic;
+  transform: rotate(-2deg);
+}
+
+.postcard-wrap {
+  position: relative;
+  max-width: 490px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.postcard {
+  position: relative;
+  padding: 32px;
+  background: #fffdf9;
+  border: 1px solid #e9ccd2;
+  box-shadow: 0 18px 45px #754b5218;
+  transform: rotate(1deg);
+}
+
+.postcard::before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  border: 1px dashed #e8c2cc;
+  pointer-events: none;
+}
+
+.postcard > * {
+  position: relative;
+}
+
+.postcard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b77b85;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.postcard-stamp {
+  width: 43px;
+  height: 48px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: #f7e4e7;
+  border: 1px dashed #d8a0ad;
+  color: #a84460;
+  line-height: 1.2;
+  transform: rotate(5deg);
+}
+
+.postcard h3 {
+  margin: 25px 0 0;
+  color: #a84460;
+  font-family: Georgia, serif;
+  font-size: 29px;
+}
+
+.postcard-subtitle {
+  margin-top: 5px;
+  margin-bottom: 24px;
+  color: #a67b84;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 12px 0 5px;
+  color: #79515d;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 12px 13px;
+  border: 1px solid #ead5d7;
+  border-radius: 3px;
+  background: #fff9f7;
+  color: #49363b;
+  font: inherit;
+  font-size: 13px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  outline: none;
+  border-color: #c77d99;
+  box-shadow: 0 0 0 3px #f5dce4;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bd9ba3;
+}
+
+button.contact-send {
+  width: 100%;
+  margin: 22px 0 5px;
+  padding: 14px;
+  background: #a84460;
+  border: 1px solid #a84460;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button.contact-send:hover {
+  background: #c16e89;
+  transform: translateY(-2px);
+}
+
+.postcard-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 15px;
+  border-top: 1px dashed #e8c2cc;
+  color: #b77b85;
+  font-family: Georgia, serif;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.postcard-decoration {
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+  padding: 10px 15px;
+  background: #f4dce3;
+  color: #a84460;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+  transform: rotate(-5deg);
+  box-shadow: 0 4px 12px #754b5210;
+}
+
+.contact-footer {
+  max-width: none;
+  margin: 0;
+  padding: 25px 20px;
+  text-align: center;
+  background: #f1e2e0;
+  border-top: 1px solid #e3caca;
+  color: #754b52;
+}
+
+.contact-footer p {
+  font-size: 13px;
+}
+
+.contact-footer a {
+  color: #a84460;
+  font-size: 12px;
+  border-bottom: 1px solid #d9a6aa;
+}
+
+/* Tampilan tablet dan HP */
+@media (max-width: 800px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 60px 7%;
+  }
+
+  .contact-heading {
+    max-width: 550px;
+  }
+
+  .postcard-wrap {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 45px 18px;
+  }
+
+  .contact-heading h2 {
+    font-size: 46px;
+  }
+
+  .postcard {
+    padding: 24px 20px;
+  }
+
+  .postcard h3 {
+    font-size: 25px;
+  }
+
+  .contact-note {
+    padding: 17px;
+  }
+}
